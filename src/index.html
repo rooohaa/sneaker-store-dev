@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Google fonts-->
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+   <!--Font awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+   <!--Main stylesheet-->
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Sneaker Store</title>
+</head>
+<body id="main">
+
+   <!--Scroll up arrow-->
+   <div class="up">
+      <a href="#main"><i class="fas fa-chevron-up"></i></a>
+   </div>
+
+   <!--Modal-->
+   <div class="modal">
+      <div class="modal-block">
+         <div class="exit-btn">&times;</div>
+         <div class="header__logo"><i class="fab fa-monero"></i></div>
+         <h2 class="modal__header">Узнай первым о новых поступлениях.</h2>
+         <p class="modal__descr">Напиши свою почту чтобы получать от нас уведомления.</p>
+         <form action="#" class="modal__form">
+            <input type="email" placeholder="Ваша почта..." id="email-input">
+            <button class="sub-btn">Подписаться</button>
+         </form>
+         <p class="after-form">Подписываясь, я принимаю <span>Политику конфиденциальности </span> вашей компании.</p>
+      </div>
+   </div>
+
+   <!--Header-->
+   <header class="header">
+      <div class="container">
+
+         <!-- Hamburger menu -->
+         <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+         <div class="header__logo"><i class="fab fa-monero"></i></div>
+
+         <nav class="header__nav">
+            <ul class="header__list">
+               <li class="header__item">
+                  <a href="index.html" class="header__link current">Главная</a>
+               </li>
+               
+               <li class="header__item">
+                  <a href="about.html" class="header__link">О Компании</a>
+               </li>
+
+               <li class="header__item">
+                  <a href="#showcase" class="header__link">Заказать</a>
+               </li>
+
+               <li class="header__item">
+                  <a href="contacts.html" class="header__link">Контакты</a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="header__log">
+            <input type="text" placeholder="Поиск">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <a href="auth.html" class="log">Войти</a>
+            <a href="auth.html" class="join">Регистрация</a>
+         </div>
+      </div>
+   </header>
+
+   <!--Promo-->
+   <section class="promo">
+      <div class="container">
+         <div class="promo__content">
+            <h2>Наши кроссовки для <span class="promo__word"></span>.</h2>
+            <div class="divider"></div>
+            <p>Fresh Foam 880v10 in New Colors</p>
+
+            <div class="promo__btns">
+               <button>Заказать</button>
+               <button data-modal>Подписаться</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!--Slider-->
+   <section class="carousel">
+      <div class="container">
+      
+         <div class="carousel__wrapper">
+
+            <div class="slide_block slide_block_current">
+               <img src="images/slide1.jpg" alt="Slide1">
+            </div>
+
+            <div class="slide_block">
+               <img src="images/slide2.jpg" alt="Slide2">
+            </div>
+
+            <div class="slide_block">
+               <img src="images/slide3.jpeg" alt="Slide3">
+            </div>
+
+         </div>
+
+         <div class="carousel__arrows">
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+         </div>
+      </div>
+   </section>
+
+   <!--Sneakers-->
+   <section class="store">
+      <div class="container">
+         
+         <div class="store__promo">
+            
+            <button class="store__tab store__tab-active" data-tab="#b1">Для Мужчин</button>
+            <button class="store__tab" data-tab="#b2">Для Женщин</button>
+            <button class="store__tab" data-tab="#b3">Для Детей</button>
+            
+         </div>
+
+         <!--First tab-->
+         <div class="store__wrapper store__wrapper-active" id="b1">  
+
+            <div class="store__block">
+               <img src="images/sneakers/sn1.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>New Balance - 574</h3>
+                  <span class="price">$79.99</span>
+                  <span class="descr">Men's lifestyle</span>
+                  <span class="avail">Available in 4 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn2.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>New Balance - 578</h3>
+                  <span class="price">$69.99</span>
+                  <span class="descr">Men's lifestyle</span>
+                  <span class="avail">Available in 3 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Nike Air - Max 993</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Men's Running</span>
+                  <span class="avail">Available in 5 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn4.jpg" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Nike Fresh Foam 993</h3>
+                  <span class="price">$79.99</span>
+                  <span class="descr">Men's Walking</span>
+                  <span class="avail">Available in 2 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn5.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>New Balance R-993</h3>
+                  <span class="price">$79.99</span>
+                  <span class="descr">Men's Running</span>
+                  <span class="avail">Available in 3 colors</span>
+               </div>
+            </div>
+
+         </div>
+
+         <!--Second tab-->
+         <div class="store__wrapper" id="b2">
+            <div class="store__block">
+               <img src="images/sneakers/sn6.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>New Balance R-574</h3>
+                  <span class="price">$59.99</span>
+                  <span class="descr">Women's Running</span>
+                  <span class="avail">Available in 2 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn7.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>New Balance R-573</h3>
+                  <span class="price">$59.99</span>
+                  <span class="descr">Women's Running</span>
+                  <span class="avail">Available in 6 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+         </div>
+
+         <!--Third tab-->
+         <div class="store__wrapper" id="b3">
+
+            <div class="store__block">
+               <img src="images/sneakers/sn8.webp" alt="Sneaker">
+               <div class="block-info">
+                  <h3>FuelCore Reveal BOA</h3>
+                  <span class="price">$49.99</span>
+                  <span class="descr">Kid's lifestyle</span>
+                  <span class="avail">Available in 4 colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+            <div class="store__block">
+               <img src="images/sneakers/sn3.png" alt="Sneaker">
+               <div class="block-info">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <span class="price">$89.99</span>
+                  <span class="descr">Lorem, ipsum dolor.</span>
+                  <span class="avail">Available in x colors</span>
+               </div>
+            </div>
+
+         </div>
+
+         <button class="btn-more">
+            Смотреть больше <i class="fas fa-chevron-right"></i> 
+         </button>
+      </div>
+   </section>
+
+   <!-- Showcase -->
+   <section class="showcase" id="showcase">
+      <div class="container">
+
+         <div class="showcase__descr">
+            <h1>Закажите наши кроссовки</h1>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores omnis velit suscipit iste ut at, vitae numquam expedita debitis sit praesentium. Reiciendis excepturi esse suscipit sequi iusto nam sunt obcaecati ab officiis, harum nobis impedit?
+            </p>
+            <button class="btn btn-primary">Заказать</button>
+         </div>
+
+         <img src="images/promo_img.jpeg" alt="Sneakers">
+
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+
+         <div class="footer__logo">
+            <h2>Sneaker <span>Store</span> </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae sapiente ex deserunt ipsum nihil.</p>
+
+            <div>Copyright &copy; 2020</div>
+         </div>
+
+         <div class="footer__links">
+            <h3>Меню</h3>
+            <div class="divider"></div>
+            <ul>
+               <li><a href="#">О компании</a></li>
+               <li><a href="#">Заказ & Скидки</a></li>
+               <li><a href="#">Получить купон</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__links">
+            <h3>Новые продукты</h3>
+            <div class="divider"></div>
+
+            <ul>
+               <li><a href="#">Для женщин</a></li>
+               <li><a href="#">Для мужчин</a></li>
+               <li><a href="#">Для детей</a></li>
+               <li><a href="#">Новинки</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__links">
+            <h3>Помощь</h3>
+            <div class="divider"></div>
+
+            <ul>
+               <li><a href="#">Наша почта</a></li>
+               <li><a href="#">Заказать звонок</a></li>
+               <li><a href="auth.html">Войти / Создать аккаунт</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </div>
+
+      </div>
+   </footer>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/modal.js"></script>
+   <script src="js/slider.js"></script>
+   <script src="js/tabs.js"></script>
+   <script src="js/hMenu.js"></script>
+</body>
+</html>

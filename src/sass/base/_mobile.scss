@@ -1,0 +1,369 @@
+@media (max-width: 576px) {
+
+   // HEADER
+   .header {
+      position: fixed;
+      border-bottom: 1px solid #ccc;
+      .h-menu {
+         display: block;
+      }
+
+      .header__log {
+         display: none;
+      }
+
+      .header__nav {
+         display: none;
+         height: 420px;
+         width: 100%;
+         z-index: 2;
+         position: fixed;
+         top: 80px;
+         left: 0px;
+         background-color: #fff;
+         opacity: 0.9;
+         border-bottom: 1px solid #ccc;
+      }
+
+      .header__list {
+         margin-top: 25px;
+         height: 80%;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      .header__link {
+         font-size: 16px;
+      }
+
+      .header__logo {
+         margin-left: 25px;
+      }
+   }
+
+   // PROMO
+   .promo {
+
+      &__content {
+         width: 350px;
+         h2 {
+            font-size: 35px;
+         }
+         
+         p {
+            font-size: 15px;
+            margin-bottom: 25px;
+         }
+      }
+
+      &__btns {
+         margin-top: 25px;
+         button {
+            width: 120px;
+            font-size: 14px;
+         }
+      }
+   }
+
+   // UP button
+   .up {
+      right: 35px;
+      bottom: 45px;
+   }
+
+   // MODAL
+   .modal-block {
+      width: 100%;
+      height: 65%;
+      transform: translateY(-600px);
+      padding-top: 15px;
+
+      &_active {
+         transform: translateY(0);
+      }
+
+      .exit-btn {
+         right: 45px;
+         top: 10px;
+      }
+   }
+
+   .modal {
+      &__header {
+         font-size: 17px;
+         width: 70%;
+      }
+      &__descr {
+         width: 60%;
+         text-align: center;
+         margin-bottom: 25px;
+      }
+      &__form {
+         input {
+            width: 300px;
+            font-size: 12px;
+            margin-left: 35px;
+         }
+         .sub-btn {
+            width: 300px;
+            margin-left: 30px;
+            height: 40px;
+         }
+      }
+      .after-form {
+         font-size: 12px;
+         text-align: center;
+         width: 80%;  
+      }
+   }
+
+   // SLIDER
+   .carousel {
+      &__arrows {
+         .next {
+            right: 35px;
+            font-size: 34px;
+         }
+         .prev {
+            left: 35px;
+            font-size: 34px;
+         }
+      }
+   }
+
+   // STORE
+   .store {
+      padding-top: 100px;
+
+      &__promo {
+         margin-bottom: 60px;
+      }
+
+      &__tab {
+         margin-right: 40px;
+         font-size: 15px;
+      }
+
+      &__wrapper {
+         grid-template-columns: 1fr;
+      }
+
+      &__block {
+         width: 300px;
+         height: 350px;
+
+         img {
+            height: 65%;
+         }
+         
+         .block-info {
+            h3 {
+               font-size: 15px;
+            }
+
+            .price {
+               font-size: 15px;
+            }
+
+            .descr, .avail {
+               font-size: 15px;
+            }
+         }
+      }
+
+      .btn-more {
+         right: 30%;
+      }
+   }
+
+   // SHOWCASE
+   .showcase {
+      height: 1200px;
+      padding-top: 130px;
+
+      .container {
+         padding-top: 80px;
+         flex-direction: column;
+         justify-content: flex-start;
+
+         img {
+            order: 0;
+            width: 365px;
+            height: 480px;
+            margin-bottom: 25px;
+         }
+      }
+
+      &__descr {
+         margin-top: 60px;
+         order: 1;
+         padding-left: 45px;
+         h1 {
+            font-size: 35px;
+         }
+
+         p {
+            font-size: 16px;
+            width: 90%;
+            margin-bottom: 50px;
+         }
+      }
+   }
+
+   // FOOTER
+   .footer {
+      .container {
+         grid-template-columns: 1fr;
+         justify-items: flex-start;
+      }
+
+      &__logo {
+         h2 {
+            font-size: 26px;
+         }
+         p {
+            font-size: 14px;
+         }
+      }
+
+      &__links {
+         .divider {
+            width: 60px;
+            height: 1px;
+         }
+
+         h3 {
+            font-size: 18px;
+         }
+      }
+   }
+
+
+   // AUTH PAGE
+   .main {
+      .container {
+         flex-direction: column;
+         align-items: center; 
+         #main-wrapper {
+            width: 390px;
+            order: 1;
+         }
+
+         img {
+            order: 0;
+            width: 420px;
+         }
+      }
+   }
+
+   .adv {
+      margin-top: 25px;
+   }
+
+   // CONTACTS PAGE
+   .contacts__header {
+      font-size: 35px;
+   }
+
+   .contact-info {
+      .container {
+         flex-direction: column;
+
+         .contact__wrapper {
+            width: 90%;
+            padding-left: 20px;  
+            height: 550px;
+            h2 {
+               font-size: 20px;
+            }
+            .contact-form {
+               margin: 0;
+               height: 100%; 
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               input, textarea {
+                  width: 100%;
+                  margin: 0;
+               }
+               
+               .contact_block {
+                  margin-bottom: 0;
+                  input {
+                     margin-bottom: 30px;
+                  }
+                  textarea {
+                     margin-bottom: 30px;
+                     resize: none;
+                  }
+               }
+
+               #mb-10 {
+                  margin-bottom: 42px;
+               }
+            }
+         }
+
+         .contact__wrapper_2 {
+            margin-left: 20px;
+            margin-top: 100px;
+            padding: 20px 50px;
+            width: 450px;
+         }
+      }
+   }
+
+   // About page
+   .about {
+      .container {
+         flex-direction: column;
+         align-items: center;
+
+         img {
+            width: 410px;
+            height: 460px;
+            object-fit: cover;
+         }
+      }
+
+      &__info {
+         margin-top: 50px;
+         order: 1;
+         h1 {
+            font-size: 28px;  
+            width: 80%;
+         }
+         p {
+            font-size: 15px;
+            width: 80%;
+         }
+         .icon-descr {
+            i {
+               font-size: 23px;
+            }
+            .strong {
+               font-size: 17px;
+            }
+         }
+
+      }
+   }
+
+   .numbers {
+     height: 600px;
+     padding: 20px;
+      .container {
+         flex-direction: column;
+         div {
+            i {
+               font-size: 38px;
+               margin-bottom: 20px;
+            }
+            .amount {
+               font-size: 18px;
+            }
+         }
+      }
+   }
+}

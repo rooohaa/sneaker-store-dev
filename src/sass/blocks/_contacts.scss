@@ -1,0 +1,125 @@
+.contacts {
+   margin-top: 70px;
+   margin-bottom: 100px;
+   height: 450px;
+   background: url('../images/bg-white.jpg') center center/cover no-repeat;
+
+   .container {   
+      padding-top: 100px;
+      height: 100%;
+
+      .divider {
+         margin: auto;
+         width: 230px;
+         height: 2px;
+         margin-top: 10px;
+      }
+   }
+
+   &__header {
+      margin-top: 70px;
+      color: rgb(6, 13, 34);
+      text-align: center;
+      font-size: 50px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+   }
+}
+
+.location {
+   margin-bottom: 80px;
+}
+
+.contact-info {
+   .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      h2 {
+         margin-bottom: 20px;
+         font-size: 25px;
+         letter-spacing: 2px;
+      }
+
+      .contact_block {
+         margin-bottom: 35px;
+         width: 100%;
+
+         input {
+            width: 45%;
+            margin-right: 30px;
+            height: 45px;
+            padding: 10px;
+            border: 1px solid silver;
+            outline: none;
+         }
+
+         &:nth-child(3) {
+            input {
+               width: 95%;
+            }
+         }
+      }
+
+      .contact-form {
+         min-height: 500px;
+         width: 100%;
+
+         textarea {
+            border: 1px solid silver;
+            width: 95%;
+            resize: vertical;
+            padding: 10px;
+            outline: none;
+         }
+
+         .send-btn {
+            width: 120px;
+            height: 45px;
+            @include easeOut;
+            &:hover {
+               transform: scale(0.95);
+            }
+         }
+      }
+
+      .contact__wrapper {
+         width: 65%;
+      }
+
+      .contact__wrapper_2 {
+         width: 35%;
+         padding-top: 50px;
+         padding-left: 120px;
+
+         div {
+            margin-bottom: 30px;
+            &:last-child {
+               margin-bottom: 0;
+            }
+            position: relative;
+
+            i {
+               display: inline-block;
+               position: absolute;
+               left: -44px;
+               top: 4px;
+               font-size: 25px;
+               color: #333;
+               opacity: 0.9;
+            }
+
+            .descr {
+               margin-bottom: 6px;
+               font-size: 16px;
+            }
+
+            .index {
+               color: darken(silver, 9);
+               font-size: 15px;
+            }
+         }
+      }
+   }
+}

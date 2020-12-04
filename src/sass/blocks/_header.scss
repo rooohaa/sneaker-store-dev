@@ -1,0 +1,108 @@
+.header {
+   background-color: #fff;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 80px;
+   z-index: 1;
+   transition: all 0.2s ease-in;
+
+   &-scrolled {
+      background-color: darken(#fff, 5);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   }
+
+   .container {
+      padding-top: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      position: relative;
+      height: 65px;
+      cursor: pointer;
+      i {
+         margin-top: 14px;
+         font-size: 42px;
+         color: $main-color;
+      }
+   }
+
+   &__nav {
+      position: relative;
+      width: 45%;
+   }
+
+   &__list {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__link {
+      color: #000;
+      font-size: 14px;
+      padding-bottom: 7px;
+      font-weight: bold;
+      &:hover {
+         border-bottom: 2px solid $main-color;
+      }
+      &.current {
+         border-bottom: 2px solid $main-color;
+      }
+   }
+
+   &__log {
+      position: relative;
+      input {
+         outline: none;
+         height: 30px;
+         border: none;
+         border-bottom: 2px solid #333;
+      }
+
+      .fa-search {
+         margin-left: -28px;
+         color: #333;
+         font-size: 14px;
+         cursor: pointer;
+      }
+
+      .fa-user {
+         margin-left: 30px;
+      }
+
+      .log, .join {
+         color: #000;
+         margin-right: 8px;   
+         font-weight: 600;
+         padding-bottom: 7px;
+         font-size: 14px;
+         &:hover {
+            border-bottom: 2px solid $main-color;
+         }
+      }
+
+      .log {
+         margin-left: 4px;
+      }
+
+      .join {
+         margin-left: 9px;
+      }
+      
+      .log::after {
+         content: '';
+         width: 0;
+         height: 45%;
+         position: absolute;
+         border: 1px solid black;
+         top: 7px;
+         left: 254px;
+      }
+   }
+}

@@ -1,0 +1,73 @@
+.about {
+
+   .container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      img {
+         width: 650px;
+         height: 650px;
+         object-fit: cover;
+      }
+   }
+
+   &__info {
+      h1 {
+         font-size: 42px;
+         margin-bottom: 15px;
+      }
+
+      p {
+         margin-top: 40px;
+         color: darken(#ccc, 20);
+         font-size: 17px;
+         line-height: 1.6;
+         margin-bottom: 40px;
+      }
+   }
+
+   .icon-descr {
+      margin-bottom: 30px;
+
+      i {
+         color: #333;
+         font-size: 30px;
+         opacity: 0.9;
+         margin-right: 10px;
+      }
+      .strong {
+         font-size: 23px;
+         color: #333;
+      }
+   }
+}
+
+.numbers {
+   margin-top: 70px;
+   height: 250px;
+   background-color: #333;
+   .container {
+      padding-top: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         i {
+            color: $main-color;
+            font-size: 50px;
+            margin-bottom: 15px;
+         }
+         .amount {
+            color: #fff;
+            font-size: 25px;
+         }
+      }
+   }
+}

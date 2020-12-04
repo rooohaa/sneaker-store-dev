@@ -1,0 +1,128 @@
+.modal {
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.5);
+
+   &_info {
+      animation-name: salam;
+      animation-duration: 1s;
+      width: 320px;
+      height: 80px;
+      background-color: white;
+      float: right;
+      margin-top: 30px;
+      margin-right: 50px;
+      border-radius: 8px;
+      border: 1px dotted #000;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      opacity: 0.7;
+      background-color: #61ff80;
+
+      p {
+         color: #000;
+         font-size: 15px;
+         line-height: 1.7;
+         font-weight: bold;
+      }
+   }
+
+   &-block {
+      @include easeOut;
+      transform: translateX(600px);
+      background-color: #fff;
+      height: 100%;
+      width: 540px;
+      position: absolute;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+
+      &_active {
+         transform: translateX(0);
+      }
+
+      .exit-btn {
+         position: absolute;
+         top: 20px;
+         right: 70px;
+         font-size: 38px;
+         color: #333;
+         opacity: 0.9;
+         cursor: pointer;
+         @include easeOut;
+         &:hover {
+            opacity: 1;
+            color: #000;
+         }
+      }
+
+      .header__logo {
+         margin-bottom: 12px;
+      }
+   }
+
+   &__header {
+      font-size: 20px;
+      font-weight: bold;
+      width: 350px;
+      text-align: center;
+   }
+   &__descr {
+      font-size: 12px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+   }
+   &__form {
+      input {
+         display: block;
+         width: 370px;
+         padding: 10px;
+         margin-bottom: 25px;
+         border: none;
+         border-bottom: 2px solid #000;
+         outline: none;
+         font-weight: bold;
+         font-size: 13px
+      }
+
+      .sub-btn {
+         width: 370px;
+         height: 50px;
+         background-color: #fff;
+         color: $main-color;
+         border: 2px solid $main-color;
+         outline: none;
+         font-weight: bold;
+         font-size: 12px;
+         cursor: pointer;
+         @include easeOut;
+         margin-bottom: 30px;
+         &:hover {
+            background-color: $main-color;
+            color: #fff;
+         }
+      }
+   }
+   .after-form {
+      text-align: left;
+      width: 385px;
+      font-size: 13px;
+      line-height: 1.8;
+      span {
+         cursor: pointer;
+         text-decoration: underline;
+      }
+   }
+}
+
+.active {
+   display: block;
+}

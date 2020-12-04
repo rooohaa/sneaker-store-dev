@@ -1,0 +1,59 @@
+.footer {
+   padding-top: 90px;
+   height: 450px;
+
+   .container {
+      border-top: 1px solid #ccc;
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      justify-items: center;
+   }
+
+   &__logo {
+      width: 300px;
+      h2 {
+         font-size: 30px;
+         margin-bottom: 25px;
+         span {
+            color: $main-color;
+         }
+      }
+      p {
+         color: darken(#a8a8a8, 7);
+         font-weight: bold;
+         opacity: 0.9;
+         margin-bottom: 45px;
+      }
+   }
+
+   &__links {
+      .divider {
+         margin-top: 0;
+         width: 70px;
+         height: 2px;
+         margin-bottom: 25px;
+      }
+
+      h3 {
+         font-size: 20px;
+         margin-bottom: 10px;
+      }
+
+      li {
+         margin-bottom: 15px;
+      }
+
+      a {
+         color: darken(#a8a8a8, 7);
+         @include easeOut;
+         display: block;
+
+         &:hover {
+            color: $main-color;
+            transform: translateX(7px);
+         }
+      }
+   }
+}

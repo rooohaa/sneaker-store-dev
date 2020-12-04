@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contacts</title>
+
+   <!--Google fonts-->
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+   <!--Font awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+   <!--Main stylesheet-->
+   <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body id="contacts">
+   
+
+   <!--Modal after submitting form-->
+   <div class="modal">
+      <div class="modal_info">
+         <p>Спасибо,мы свяжемся с вами в ближайшее время!</p>
+      </div>
+   </div>
+
+    <!--Scroll up arrow-->
+    <div class="up">
+      <a href="#contacts"><i class="fas fa-chevron-up"></i></a>
+   </div>
+
+    <!--Header-->
+    <header class="header" id="header">
+
+      <div class="container">
+
+         <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+         <div class="header__logo"><i class="fab fa-monero"></i></div>
+
+         <nav class="header__nav">
+            <ul class="header__list">
+               <li class="header__item">
+                  <a href="index.html" class="header__link">Главная</a>
+               </li>
+               
+               <li class="header__item">
+                  <a href="about.html" class="header__link">О Компании</a>
+               </li>
+
+               <li class="header__item">
+                  <a href="#showcase" class="header__link">Заказать</a>
+               </li>
+
+               <li class="header__item">
+                  <a href="contacts.html" class="header__link current">Контакты</a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="header__log">
+            <input type="text" placeholder="Поиск">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <a href="auth.html" class="log">Войти</a>
+            <a href="auth.html" class="join">Регистрация</a>
+         </div>
+      </div>
+   </header>
+
+   <!-- Showcase -->
+   <section class="contacts">
+      <div class="container">
+         <h1 class="contacts__header">Контакты</h1>
+         <div class="divider"></div>
+      </div>
+   </section>
+
+
+   <!-- Geo location -->
+   <section class="location">
+      <div class="container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5156.152502865664!2d71.42349073365364!3d51.11430049993122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245843db3d21547%3A0x92a2c19ac18691d4!2z0JbQmiDQntC70LjQvNC_INCf0LDQu9Cw0YE!5e0!3m2!1sru!2skz!4v1604062739548!5m2!1sru!2skz" width="100%" height="480" frameborder="0" style="border:none; opacity: 0.8;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+   </section>
+
+   <!-- Contacts info -->
+   <section class="contact-info">
+      <div class="container">
+         <div class="contact__wrapper">
+            <h2>На Связи</h2>
+            
+            <form class="contact-form">
+               <div class="contact_block">
+                  <textarea name="message" cols="30" rows="10" placeholder="Сообщение..." ></textarea>
+               </div>
+
+               <div class="contact_block">
+                  <input type="text" placeholder="Ваше имя" id="mb-10">
+                  <input type="email" placeholder="Ваша почта">
+               </div>
+               
+               <div class="contact_block">
+                  <input type="text" placeholder="Enter subject">
+               </div>
+
+               <button class="btn send-btn">Send</button>
+            </form>
+         </div>
+
+         <div class="contact__wrapper_2">
+            <div class="home">
+               <i class="fas fa-home"></i>
+               <h4 class="descr">Nur-sultan, Kazakhstan</h4>
+               <span class="index">7 подъезд, CA 230</span>
+            </div>
+
+            <div class="phone">
+               <i class="fas fa-mobile-alt"></i>
+               <h4 class="descr">+7 (747) 230 22-39</h4>
+               <span class="index">С  Пн - Пт 7:30</span>
+            </div>
+
+            <div class="email">
+               <i class="far fa-envelope"></i>
+               <h4 class="descr">support@gmail.com</h4>
+               <span class="index">Мы ответим вам в любое время!</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+
+         <div class="footer__logo">
+            <h2>Sneaker <span>Store</span> </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae sapiente ex deserunt ipsum nihil.</p>
+
+            <div>Copyright &copy; 2020</div>
+         </div>
+
+         <div class="footer__links">
+            <h3>Меню</h3>
+            <div class="divider"></div>
+            <ul>
+               <li><a href="#">О компании</a></li>
+               <li><a href="#">Заказ & Скидки</a></li>
+               <li><a href="#">Получить купон</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__links">
+            <h3>Новые продукты</h3>
+            <div class="divider"></div>
+
+            <ul>
+               <li><a href="#">Для женщин</a></li>
+               <li><a href="#">Для мужчин</a></li>
+               <li><a href="#">Для детей</a></li>
+               <li><a href="#">Новинки</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__links">
+            <h3>Помощь</h3>
+            <div class="divider"></div>
+
+            <ul>
+               <li><a href="#">Наша почта</a></li>
+               <li><a href="#">Заказать звонок</a></li>
+               <li><a href="auth.html">Войти / Создать аккаунт</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </div>
+
+      </div>
+   </footer>
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+      $(function() {
+         $(document).scroll(function() {
+         let $nav = $(".header");
+         $nav.toggleClass('header-scrolled', $(this).scrollTop() > $nav.height());
+         });
+      });
+   </script>
+   
+   <script src="js/form_modal.js"></script>
+   <script src="js/hMenu.js"></script>
+</body>
+</html>

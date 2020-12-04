@@ -1,0 +1,47 @@
+.promo {
+   padding-top: 80px;
+   background: url('../images/promo_img.jpg') center center/cover no-repeat;
+   height: 750px;
+
+   .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+   }
+
+   &__content {
+      @include easeOut;
+      width: 400px;
+      animation-name: slideLeft;
+      animation-duration: 0.8s;
+      h2 {
+         font-size: 48px;
+         margin-bottom: 15px;
+      }
+      p {
+         font-size: 16px;
+         margin-top: 27px;
+         margin-bottom: 27px;
+      }
+   }
+
+   &__btns {
+      button {
+         width: 150px;
+         height: 45px;
+         margin-right: 25px;
+         background-color: $main-color;
+         cursor: pointer;
+         border: none;
+         color: #fff;
+         outline: none;
+         @include easeOut;
+         &:hover {
+            background-color: darken($main-color, 5);
+         }
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}
